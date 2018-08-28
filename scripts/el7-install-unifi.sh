@@ -1,7 +1,7 @@
 #!/bin/bash
 #Install UniFi:
 
-#You can run it directly with curl -s https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/el7-install-unifi.sh | sudo bash
+#You can run it directly with curl -s https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-install-unifi.sh | sudo bash
 
 #Set version numbers for download:
 unifiversion="$(curl -L --silent https://help.ubnt.com/hc/en-us/articles/115000441548-UniFi-Current-Controller-Versions | grep -oP "LTS \K([0-9\.]+)")"
