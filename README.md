@@ -1,4 +1,4 @@
-# Unofficial CentOS/RHEL Ubiquiti UniFi Installation Script
+# The Unofficial CentOS/RHEL Ubiquiti UniFi Installation Script
 
 Based on the following installation script https://community.ubnt.com/t5/UniFi-Wireless/Installing-UniFi-on-CentOS7-as-a-service/m-p/1973439/highlight/true#M234790 
 
