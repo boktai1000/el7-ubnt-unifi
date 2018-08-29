@@ -12,3 +12,11 @@ If you're interested in reading more about the MongoDB 3.6.x issues / recommenda
 * https://community.ubnt.com/t5/UniFi-Updates-Blog/UniFi-SDN-Controller-5-8-28-Stable-has-been-released/ba-p/2449036
 * https://community.ubnt.com/t5/UniFi-Updates-Blog/UniFi-SDN-Controller-5-6-39-LTS-Stable-has-been-released/ba-p/2398954
 * Linux systems must be running a version of MongoDB prior to 3.6.x. **We recommend 3.4.x**. This is most likely to be an issue on Ubuntu 18.04 LTS, as it currently offers MongoDB 3.6.x.
+
+You can run the scripts directly with the following commands
+
+Installation
+`curl -s https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-install-unifi.sh | sudo bash`
+
+Updating
+`curl -s https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-update-unifi.sh | sudo bash`
