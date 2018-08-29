@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #Install UniFi:
 
 #Based on https://community.ubnt.com/t5/UniFi-Wireless/Installing-UniFi-on-CentOS7-as-a-service/m-p/1973439/highlight/true#M234790
