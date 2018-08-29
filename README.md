@@ -15,8 +15,8 @@ If you're interested in reading more about the MongoDB 3.6.x issues / recommenda
 
 You can run the scripts directly with the following commands
 
-Installation
-`curl -s https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-install-unifi.sh | sudo bash`
+Installation:
+* `curl -s https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-install-unifi.sh | sudo bash`
 
-Updating
-`curl -s https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-update-unifi.sh | sudo bash`
+Updating:
+* `curl -s https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-update-unifi.sh | sudo bash`
