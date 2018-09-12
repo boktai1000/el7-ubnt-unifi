@@ -30,6 +30,7 @@ Set the script as executable
 Set your target version
 * `vi el7-install-unifi.sh`
 * Replace unifiversion="x.x.xx" with your preferred version from https://help.ubnt.com/hc/en-us/articles/360008240754#1 
+* Leave the version number you select inside the quotes
 
 Run the script to begin automated installation
 * `sudo ./el7-install-unifi.sh`
@@ -45,6 +46,7 @@ Set the script as executable
 Set your target version
 * `vi el7-update-unifi.sh`
 * Replace unifiversion="x.x.xx" with your preferred version from https://help.ubnt.com/hc/en-us/articles/360008240754#1 
+* Leave the version number you select inside the quotes
 * Note that it is recommended to target the same branch that you're currently on, or be sure to read information about upgrade from branches
 
 Run the script to begin automated installation
