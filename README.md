@@ -19,6 +19,21 @@ See the follow information for information from Ubiquiti regarding MongoDB versi
 
 You can run the scripts directly with the following commands, or reference them directly in the repository and copy or SCP the files over.
 
+## Giving users a choice
+
+This script is all about giving users a choice on what version they want to download, and what is right for their environment. Keeping that idea in mind, I thought it would be nice to also list a couple alternatives for users to evaluate or look at which may provide a better experience based on what you're looking for, as well as what Operating System you're working with.
+
+Official Ubiquiti Installation Guide
+* https://help.ubnt.com/hc/en-us/articles/220066768-UniFi-How-to-Install-Update-via-APT-on-Debian-or-Ubuntu
+
+UniFi Installation Scripts by AmazedMender16
+* https://community.ubnt.com/t5/UniFi-Wireless/UniFi-Installation-Scripts-UniFi-Easy-Update-Scripts-Works-on/td-p/2375150
+
+Installing UniFi on CentOS7 as a service by yaplej
+* https://community.ubnt.com/t5/UniFi-Wireless/Installing-UniFi-on-CentOS7-as-a-service/td-p/1524666
+* https://docs.google.com/document/d/1aroCdNzB9NR7PIvqF5J_6vi0nHqsiJPI1rTG3O9Vwc4/edit?usp=sharing 
+
+
 ## Installing the UniFi Controller
 
 Download the script to your box with wget, or copy/paste it manually.
