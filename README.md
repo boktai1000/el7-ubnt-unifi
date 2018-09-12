@@ -1,7 +1,9 @@
-# Unofficial EL7 UniFi Installation Script by boktai1000
-Site: https://github.com/boktai1000/el7-ubnt-unifi
+# Unofficial EL7 UniFi Controller Installation Script by boktai1000
+GitHub Site Link:
+* https://github.com/boktai1000/el7-ubnt-unifi
 
-Based on the following installation script https://community.ubnt.com/t5/UniFi-Wireless/Installing-UniFi-on-CentOS7-as-a-service/m-p/1973439/highlight/true#M234790 
+Based on the following installation script:
+* https://community.ubnt.com/t5/UniFi-Wireless/Installing-UniFi-on-CentOS7-as-a-service/m-p/1973439/highlight/true#M234790 
 
 Special thanks to Ubiquiti Forum User OverkillSD, who created the original script this is based off of.
 
