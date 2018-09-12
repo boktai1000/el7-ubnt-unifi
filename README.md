@@ -49,5 +49,5 @@ Set your target version
 * Leave the version number you select inside the quotes
 * Note that it is recommended to target the same branch that you're currently on, or be sure to read information about upgrade from branches
 
-Run the script to begin automated installation
+Run the script to begin automated upgrade
 * `sudo ./el7-update-unifi.sh`
