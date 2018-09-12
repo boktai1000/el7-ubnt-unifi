@@ -41,13 +41,13 @@ Unofficial RHEL/CentOS UniFi Controller rpm packages
 Download the script to your box with wget, or copy/paste it manually.
 * `wget https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-install-unifi.sh`
 
-Set the script as executable
-* `chmod +x el7-install-unifi.sh`
-
 Set your target version
 * `vi el7-install-unifi.sh`
 * Replace unifiversion="x.x.xx" with your preferred version from https://help.ubnt.com/hc/en-us/articles/360008240754#1 
 * Leave the version number you select inside the quotes
+
+Set the script as executable
+* `chmod +x el7-install-unifi.sh`
 
 Run the script to begin automated installation
 * `sudo ./el7-install-unifi.sh`
@@ -57,14 +57,14 @@ Run the script to begin automated installation
 Download the script to your box with wget, or copy/paste it manually.
 * `wget https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-update-unifi.sh`
 
-Set the script as executable
-* `chmod +x el7-update-unifi.sh`
-
 Set your target version
 * `vi el7-update-unifi.sh`
 * Replace unifiversion="x.x.xx" with your preferred version from https://help.ubnt.com/hc/en-us/articles/360008240754#1 
 * Leave the version number you select inside the quotes
 * Note that it is recommended to target the same branch that you're currently on, or be sure to read information about upgrade from branches
+
+Set the script as executable
+* `chmod +x el7-update-unifi.sh`
 
 Run the script to begin automated upgrade
 * `sudo ./el7-update-unifi.sh`
