@@ -6,6 +6,8 @@ Based on the following installation script:
 * https://community.ubnt.com/t5/UniFi-Wireless/Installing-UniFi-on-CentOS7-as-a-service/m-p/1973439/highlight/true#M234790 
 * **Special thanks to Ubiquiti Forum User OverkillSD, who created the original script this is based off of.** 
 
+## About this script - Read Me First!
+
 This installation script is a fork of said script with a few minor edits to fit my preferences and needs, with some additional flexibility in some areas. For example one area where this script differs is the exclusive of the smartmontools package which I didn't see the need for.
 
 The biggest area where my script differs is that versions have to be selected manually, meaning that by default the script will actually not work by default. You will have to modify the script to insert the version number you'd like to target for your Ubiquiti UniFi Controller.
