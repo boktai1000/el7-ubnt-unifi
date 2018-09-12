@@ -6,6 +6,7 @@
 #Download the script with wget https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-install-unifi.sh
 #Set the script as executable with chmod +x el7-install-unifi.sh
 
+#REQUIRED / IMPORTANT OR ELSE THE SCRIPT WILL FAIL TO DOWNLOAD
 #Select your version number from the current UniFi Controller software versions web page https://help.ubnt.com/hc/en-us/articles/360008240754#1
 #Replace unifiversion="x.x.xx" with the version number you want to target from the web page, leave the version number inside the quotes
 
