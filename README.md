@@ -33,6 +33,8 @@ Installing UniFi on CentOS7 as a service by yaplej
 * https://community.ubnt.com/t5/UniFi-Wireless/Installing-UniFi-on-CentOS7-as-a-service/td-p/1524666
 * https://docs.google.com/document/d/1aroCdNzB9NR7PIvqF5J_6vi0nHqsiJPI1rTG3O9Vwc4/edit?usp=sharing 
 
+Unofficial RHEL/CentOS UniFi Controller rpm packages
+* https://community.ubnt.com/t5/UniFi-Wireless/Unofficial-RHEL-CentOS-UniFi-Controller-rpm-packages/td-p/1744595
 
 ## Installing the UniFi Controller
 
