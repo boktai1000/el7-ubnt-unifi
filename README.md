@@ -1,4 +1,4 @@
-# Unofficial EL7 UniFi Controller Installation Script by boktai1000
+# Unofficial EL7 UniFi Install Script by boktai1000
 GitHub Site Link:
 * https://github.com/boktai1000/el7-ubnt-unifi
 
