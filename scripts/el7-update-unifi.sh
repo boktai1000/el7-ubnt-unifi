@@ -6,7 +6,7 @@
 #You can run it directly with curl -s https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-update-unifi.sh | sudo bash
 
 #Set version numbers for download:
-unifiversion="$(curl -L --silent https://help.ubnt.com/hc/en-us/articles/115000441548-UniFi-Current-Controller-Versions | grep -oP "LTS \K([0-9\.]+)")"
+unifiversion="$(curl -L --silent https://help.ubnt.com/hc/en-us/articles/360008240754#1 | grep -oP "LTS \K([0-9\.]+)")"
  
 #Stop Service:
 systemctl stop unifi
