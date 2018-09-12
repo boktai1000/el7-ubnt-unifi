@@ -1,23 +1,50 @@
-# The Unofficial CentOS/RHEL Ubiquiti UniFi Installation Script
+# Unofficial EL7 UniFi Installation Script by boktai1000
 Site: https://github.com/boktai1000/el7-ubnt-unifi
 
 Based on the following installation script https://community.ubnt.com/t5/UniFi-Wireless/Installing-UniFi-on-CentOS7-as-a-service/m-p/1973439/highlight/true#M234790 
 
-I have modified it slightly to remove a few unnecessary lines and packages such as smartmontools that I didn't see a need for, as well as some commented out lines that I didn't need to be in my script to make it flow a bit better and read easier. They are minor edits, but I feel like some users like myself may find it useful still.
+Special thanks to Ubiquiti Forum User OverkillSD, who created the original script this is based off of.
 
-I liked using this as a basis because it's nice to have the entire process scripted for one, as well as because of the issues of MongoDB 3.6.x that Ubiquiti are advising against from using, and recommending version 3.4.x which this script makes it incredible easy to select which version of MongoDB you want to use.
+This installation script is a fork of said script with a few minor edits to fit my preferences and needs, with some additional flexibility in some areas. For example one area where this script differs is the exclusive of the smartmontools package which I didn't see the need for.
 
-If you're interested in reading more about the MongoDB 3.6.x issues / recommendations on using MongoDB 3.4.x check out the following links. **All credit to user OverkillSD** who I forked this from and made adjustments to fit my needs, link to his original script and post above.
+The biggest area where my script differs is that versions have to be selected manually, meaning that by default the script will actually not work by default. You will have to modify the script to insert the version number you'd like to target for your Ubiquiti UniFi Controller.
 
-* https://community.ubnt.com/t5/UniFi-Routing-Switching/MongoDB-3-6/td-p/2195435
-* https://community.ubnt.com/t5/UniFi-Updates-Blog/UniFi-SDN-Controller-5-8-28-Stable-has-been-released/ba-p/2449036
-* https://community.ubnt.com/t5/UniFi-Updates-Blog/UniFi-SDN-Controller-5-6-39-LTS-Stable-has-been-released/ba-p/2398954
-* Linux systems must be running a version of MongoDB prior to 3.6.x. **We recommend 3.4.x**. This is most likely to be an issue on Ubuntu 18.04 LTS, as it currently offers MongoDB 3.6.x.
+This script is targetting MongoDB 3.4.x by default as that is the recommended version from Ubiquiti as of this time of writing. If this ever changes in the future, selecting a new version should be as simply as modifying the variable where you select your Ubiquiti UniFi controller version, but I've prepopulated this field for MongoDB already. 
+
+See the follow information for information from Ubiquiti regarding MongoDB versions:
+* https://help.ubnt.com/hc/en-us/articles/220066768-UniFi-How-to-Install-Update-via-APT-on-Debian-or-Ubuntu
 
 You can run the scripts directly with the following commands, or reference them directly in the repository and copy or SCP the files over.
 
-Installation:
-* `curl -s https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-install-unifi.sh | sudo bash`
 
-Updating:
-* `curl -s https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-update-unifi.sh | sudo bash`
+## Installing the UniFi Controller
+
+Download the script to your box with wget, or copy/paste it manually.
+* `wget https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-install-unifi.sh`
+
+Set the script as executable
+* `chmod +x el7-install-unifi.sh`
+
+Set your target version
+* `vi el7-install-unifi.sh`
+* Replace unifiversion="x.x.xx" with your preferred version from https://help.ubnt.com/hc/en-us/articles/360008240754#1 
+
+Run the script to begin automated installation
+* `sudo ./el7-install-unifi.sh`
+
+
+## Updating the UniFi Controller
+
+Download the script to your box with wget, or copy/paste it manually.
+* `wget https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-update-unifi.sh`
+
+Set the script as executable
+* `chmod +x el7-update-unifi.sh`
+
+Set your target version
+* `vi el7-update-unifi.sh`
+* Replace unifiversion="x.x.xx" with your preferred version from https://help.ubnt.com/hc/en-us/articles/360008240754#1 
+* Note that it is recommended to target the same branch that you're currently on, or be sure to read information about upgrade from branches
+
+Run the script to begin automated installation
+* `sudo ./el7-update-unifi.sh`
