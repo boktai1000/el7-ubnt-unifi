@@ -4,7 +4,7 @@ GitHub Site Link:
 
 Based on the following installation script:
 * https://community.ubnt.com/t5/UniFi-Wireless/Installing-UniFi-on-CentOS7-as-a-service/m-p/1973439/highlight/true#M234790 
-* **Special thanks to Ubiquiti forum user OverkillSD, who created the original script this is based off of.** 
+* **Special thanks to Ubiquiti forum user OverkillSD, who created the original script this is based off of** 
 
 ## About this script - Read me first!
 
