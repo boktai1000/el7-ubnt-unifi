@@ -11,7 +11,7 @@
 
 #Run the script with sudo ./el7-update-unifi.sh
 
-#Set version numbers for download:
+#Set version numbers for download here:
 unifiversion="x.x.xx"
  
 #Stop Service:
