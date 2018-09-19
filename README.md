@@ -36,13 +36,13 @@ Installing UniFi on CentOS7 as a service by yaplej
 Unofficial RHEL/CentOS UniFi Controller rpm packages
 * https://community.ubnt.com/t5/UniFi-Wireless/Unofficial-RHEL-CentOS-UniFi-Controller-rpm-packages/td-p/1744595
 
-## Installing the UniFi Controller
+# Installing the UniFi Controller
 
-### Option 1: (Default) Install LTS Stable 
+## Option 1: (Default) Install LTS Stable 
 You can run it directly with
 * `curl -s https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-install-unifi.sh | sudo bash`
 
-### Option 2: Grab latest version of other branches
+## Option 2: Grab latest version of other branches
 Download the script to your box with wget, or copy/paste it manually.
 * `wget https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-install-unifi.sh`
 
@@ -59,7 +59,7 @@ Run the script to begin automated installation
 * `sudo ./el7-install-unifi.sh`
 
 
-### Option 3: Manually target version of choice
+## Option 3: Manually target version of choice
 Download the script to your box with wget, or copy/paste it manually.
 * `wget https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-install-unifi.sh`
 
@@ -76,13 +76,13 @@ Set the script as executable
 Run the script to begin automated installation
 * `sudo ./el7-install-unifi.sh`
 
-## Updating the UniFi Controller
+# Updating the UniFi Controller
 
-### Option 1: (Default) Install LTS Stable 
+## Option 1: (Default) Install LTS Stable 
 You can run it directly with
 * `curl -s https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-update-unifi.sh | sudo bash`
 
-### Option 2: Grab latest version of other branches
+## Option 2: Grab latest version of other branches
 Download the script to your box with wget, or copy/paste it manually.
 * `wget https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-update-unifi.sh`
 
@@ -100,7 +100,7 @@ Run the script to begin automated installation
 
 
 
-### Option 3: Manually target version of choice
+## Option 3: Manually target version of choice
 Download the script to your box with wget, or copy/paste it manually.
 * `wget https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-update-unifi.sh`
 
