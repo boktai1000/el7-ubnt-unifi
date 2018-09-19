@@ -3,7 +3,7 @@
 #Update UniFi:
 #Based on https://community.ubnt.com/t5/UniFi-Wireless/Installing-UniFi-on-CentOS7-as-a-service/m-p/1973439/highlight/true#M234790
 #
-###Option 1: (Default) Upgrade LTS Stable
+###Option 1: (Default) Update LTS Stable
 ##You can run it directly with curl -s https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-update-unifi.sh | sudo bash
 ##LTS Stable
 unifiversion="$(curl --silent --include --no-buffer --header "Connection: Upgrade" --header "Upgrade: websocket" --header "Sec-WebSocket-Version: 13" https://help.ubnt.com/hc/en-us/articles/360008240754#1 | grep -A1 ">LTS Stable<" | egrep -o "([0-9]{1,}\.)+[0-9]{1,}")"
@@ -35,7 +35,7 @@ unifiversion="$(curl --silent --include --no-buffer --header "Connection: Upgrad
 ##Set the script as executable with chmod +x el7-update-unifi.sh
 ##Run the script with sudo ./el7-update-unifi.sh
 #unifiversion="x.x.xx"
- 
+
 #Stop Service:
 systemctl stop unifi
 
