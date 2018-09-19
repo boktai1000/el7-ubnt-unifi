@@ -68,7 +68,7 @@ Select your target version
 * Comment out LTS Stable and then uncomment unifiversion="x.x.xx"
 * `#unifiversion="$(curl --silent --include --no-buffer --header "Connection: Upgrade" --header "Upgrade: websocket" --header "Sec-WebSocket-Version: 13" https://help.ubnt.com/hc/en-us/articles/360008240754#1 | grep -A1 ">LTS Stable<" | egrep -o "([0-9]{1,}\.)+[0-9]{1,}")"`
 * `unifiversion="x.x.xx"`
-* Replace #unifiversion="x.x.xx" with the version number you want to target from the web page, leave the version number inside the quotes
+* Replace unifiversion="x.x.xx" with the version number you want to target, leave the version number inside the quotes
 
 Set the script as executable
 * `chmod +x el7-install-unifi.sh`
@@ -77,6 +77,28 @@ Run the script to begin automated installation
 * `sudo ./el7-install-unifi.sh`
 
 ## Updating the UniFi Controller
+
+### Option 1: (Default) Install LTS Stable 
+You can run it directly with
+* `curl -s https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-update-unifi.sh | sudo bash`
+
+### Option 2: Grab latest version of other branches
+Download the script to your box with wget, or copy/paste it manually.
+* `wget https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-update-unifi.sh`
+
+Select your branch
+* `vi el7-update-unifi.sh`
+* Comment out the LTS Stable branch
+* `#unifiversion="$(curl --silent --include --no-buffer --header "Connection: Upgrade" --header "Upgrade: websocket" --header "Sec-WebSocket-Version: 13" https://help.ubnt.com/hc/en-us/articles/360008240754#1 | grep -A1 ">LTS Stable<" | egrep -o "([0-9]{1,}\.)+[0-9]{1,}")"`
+* Uncomment the branch of your choice
+
+Set the script as executable
+* `chmod +x el7-update-unifi.sh`
+
+Run the script to begin automated installation
+* `sudo ./el7-update-unifi.sh`
+
+
 
 ### Option 3: Manually target version of choice
 Download the script to your box with wget, or copy/paste it manually.
