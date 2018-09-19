@@ -31,7 +31,7 @@ unifiversion="$(curl --silent --include --no-buffer --header "Connection: Upgrad
 #
 #
 ###Option 3: Manually target version of choice, be sure to comment out LTS Stable and then uncomment unifiversion="x.x.xx"
-##Replace unifiversion="x.x.xx" with the version number you want to target from the web page, leave the version number inside the quotes
+##Replace unifiversion="x.x.xx" with the version number you want to target, leave the version number inside the quotes
 ##Set the script as executable with chmod +x el7-update-unifi.sh
 ##Run the script with sudo ./el7-update-unifi.sh
 #unifiversion="x.x.xx"
