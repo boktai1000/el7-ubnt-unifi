@@ -38,6 +38,7 @@ Unofficial RHEL/CentOS UniFi Controller rpm packages
 
 ## Installing the UniFi Controller
 
+### Option 3: Manually target version of choice
 Download the script to your box with wget, or copy/paste it manually.
 * `wget https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-install-unifi.sh`
 
@@ -54,6 +55,7 @@ Run the script to begin automated installation
 
 ## Updating the UniFi Controller
 
+### Option 3: Manually target version of choice
 Download the script to your box with wget, or copy/paste it manually.
 * `wget https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-update-unifi.sh`
 
