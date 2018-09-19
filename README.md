@@ -63,10 +63,12 @@ Run the script to begin automated installation
 Download the script to your box with wget, or copy/paste it manually.
 * `wget https://raw.githubusercontent.com/boktai1000/el7-ubnt-unifi/master/scripts/el7-install-unifi.sh`
 
-Set your target version
+Select your target version
 * `vi el7-install-unifi.sh`
-* Replace unifiversion="x.x.xx" with your preferred version from https://help.ubnt.com/hc/en-us/articles/360008240754#1 
-* Leave the version number you select inside the quotes
+* Comment out LTS Stable and then uncomment unifiversion="x.x.xx"
+* `#unifiversion="$(curl --silent --include --no-buffer --header "Connection: Upgrade" --header "Upgrade: websocket" --header "Sec-WebSocket-Version: 13" https://help.ubnt.com/hc/en-us/articles/360008240754#1 | grep -A1 ">LTS Stable<" | egrep -o "([0-9]{1,}\.)+[0-9]{1,}")"`
+* `unifiversion="x.x.xx"`
+* Replace #unifiversion="x.x.xx" with the version number you want to target from the web page, leave the version number inside the quotes
 
 Set the script as executable
 * `chmod +x el7-install-unifi.sh`
